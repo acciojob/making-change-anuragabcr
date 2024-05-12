@@ -12,7 +12,7 @@ const makeChange = (c) => {
         n: 0,
         p: 0
     }
-    for (const key of curr) {
+    for (const key in curr) {
         while(c >= curr[key]) {
             mon[key] += 1
             c -= curr[key]
